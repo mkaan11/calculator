@@ -1,4 +1,3 @@
-// todo: prevent division by 0,
 let numberArray = [];
 
 
