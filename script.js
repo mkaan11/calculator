@@ -124,7 +124,12 @@ const backspace = document.getElementById('backspace')
 
 backspace.addEventListener('click', () => {
     let valueOnDisplay = textBar.textContent;
+    if (valueOnDisplay.length == 1) {
+        numberArray = [];
+        currentOperator = "";
+    }
     valueOnDisplay = valueOnDisplay.slice(0, -1);
     textBar.textContent = valueOnDisplay;
+    
 })
 
